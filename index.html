@@ -8,26 +8,60 @@
     <style>
         p{
             font-size: 23px;
+            line-height: 50px;
         }
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 150px;
+        }
+
+        .navbar{
+            position: fixed;
+            width: 100%;
+        }
+
+        .campus-photos img{
+            width: 70%;
+            height: 65%;
+            border-radius: 50px;
+        }
+
+        .campus-photos h2{
+            font-size: 50px;
+            color: rgb(6, 104, 126);
+        }
+
+        footer{
+            /*background-color: rgb(6, 104, 126);*/
+            height: 150%;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            margin: auto;
+            position: sticky;
+        }
+        
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid; border-color: rgb(6, 104, 126); border-width: 5px;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img style="height: 125px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OBMC Logo"></a>
+            <a class="navbar-brand"><img style="height: 125px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OBMC Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto" style="margin-left: 30px; font-size: 25px; gap: 23px;">
                     <li class="nav-item"></li>
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Campuses</a>
+                    <a class="nav-link" href="#campuses">Campuses</a>
                     </li>
                 </ul>
                 <a class="btn" href="" style="background-color: rgb(6, 104, 126); border-radius: 50px; color: white; margin-right: 7%; width: 160px; font-size: 23px">MY PORTAL</a>
@@ -39,30 +73,82 @@
     <div class="container-fluid m-0 p-0">
     <div class="row">
         <div class="col">
-            <img src="https://storage.googleapis.com/oa_disk001/obstaana/66/school_logo/1784525200-534.jpeg" alt="OBMC Header" class="img-fluid w-100 d-block">
+            <img id="home" src="https://storage.googleapis.com/oa_disk001/obstaana/66/school_logo/1784525200-534.jpeg" alt="OBMC Header" class="img-fluid w-100 d-block">
 
     <div class="container">
         <div class="row justify-content-center">
-                <div class="aboutus" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <div class="aboutus" id="about" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                     <br>
                     <!--<h1 style="color: rgb(6, 104, 126);">_______________________________________________</h1>-->
-                    <h1 style="font-size: 75px; color: rgb(6, 104, 126)"> <b>O.B. Montessori Center</b></h1> 
+                    <h1 id="about" style="font-size: 75px; color: rgb(6, 104, 126)"> <b>O.B. Montessori Center</b></h1> 
                     <p>_______________________________ /// ______________________________</p>
                     <h2 style="color: rgb(6, 104, 126)">A DIAMOND LEGACY OF LEARNING</h2>
                     <br>
                     <h3 style="color: gray"><i>"At Operation Brotherhood Montessori Center, each child is nurtured in the holistic method of Dr. Maria Montessori."</i></h3>
                     <br>
                     <p>Welcome to the O.B. Montessori Center in the Philippines!</p>
+                    <br>
                     <p>We are a progressive pre-k to 12 co-educational school, offering a viable alternative to international schools. At OBMC, we blend tradition and innovation to prepare a child for life.</p>
-
+                    <br>
                     <p>Our mission is to transform our students into self-developing and productive individuals who can succeed, direct, and influence the future of an ever-changing world.</p>
-
+                    <br>
                     <p>Explore our programs and discover the vibrant community that makes OBMC a unique place for a child to grow and develop.</p>
                 </div>
-                <div class="campuses">
-                    
+                <div class="campuses" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <br>
+                    <hr>
+                    <br>
+                    <h1 id="campuses" style="font-size: 75px; color: rgb(6, 104, 126)"><b>Campuses</b></h1>
+                    <br>
+                    <p>In a safe and nurturing environment, our campuses offer accessible, high-quality education for learning, creativity, and development.</p>
+                    <br>
+                    <p>Come and visit our facilities to see and experience what each campus can offer your child and family.</p>
+                    <div class="campus-container">
+                        <br>
+                        <div class="campus-photos">
+                            <!--STA. ANA CAMPUS-->
+                            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/97d122d3-7288-49cb-bcdd-3c210e3366f8/OBMC+MONTESSORI+SA+1+-+AY+2026+FA.jpg" alt="Sta. Ana Campus Photo">
+                            <br>
+                            <h2><b>Sta. Ana</b></h2>
+                            <p>Our OBMC Sta. Ana Campus is located in the heritage district of Manila. It is known for its strong academic programs, community involvement, and love for culture and heritage.</p>
+                        </div>
+                        <br><br>
+                        <!--ANGELES CAMPUS-->
+                        <div class="campus-photos">
+                            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/51bf9a1b-c4fc-42b1-abe6-945af52780da/OBMC+MONTESSORI+AN+1+-+AY+2026+FA.jpg" alt="Angeles Campus Photo">
+                            <br>
+                            <h2><b>Angeles</b></h2>
+                            <p>Our OBMC Angeles Campus is located in the culturally rich and vibrant province of Pampanga. Both academically and personally, it provides a nurturing and dynamic Montessori environment for students to thrive.</p>
+                        </div>
+                        <br><br>
+                            <div class="campus-photos">
+                            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/affba656-d015-4b96-a8ba-3ef5bbbc2c39/OBMC+MONTESSORI+GH+-+AY+2026+FA.jpg" alt="Greenhills Campus Photo">
+                            <br>
+                            <h2><b>Greenhills</b></h2>
+                            <p>Our Greenhills Campus in San Juan City offers a creative and fun environment to spark the imagination, love of learning, and service to the community of the students.</p>
+                            </div>
+
+                            <br><br>
+                            <div class="campus-photos">
+                            <img src="https://obmontessori.orangeapps.ph/landing/obmontessori/images/Sta.%20Ana%20facad.jpg" alt="Las Piñas Campus Photo">
+                            <br>
+                            <h2><b>Las Piñas</b></h2>
+                            <p>Our Las Piñas Campus pays homage to the area's cultural history, the birthplace of the Sarao jeepney, and the unique 19th Bamboo Organ. Through its welcoming atmosphere, it encourages the development and learning of students.</p>
+                            <br><br>
+                            <div class="campus-photos">
+                            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg" alt="Fairview Campus Photo">
+                            <br>
+                            <h2><b>Fairview</b></h2>
+                            <p>Our Fairview Campus located in Quezon City delivers accessible quality montessori education to its community of young families.</p>
+                            <br>
+                    </div>
                 </div>
         </div>
     </div>
+    <hr>
+    <br>
+    <footer class="w-100 d-block">
+        <p style="color: rgb(17, 16, 16); text-align: center;" class="foot">&copy; 2026 My Personal Portfolio | Created by [Fabrice Betina T. Serapio - 9-Sapphire]</p>
+    </footer>
 </body>
 </html>
